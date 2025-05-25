@@ -64,7 +64,7 @@ const ProductListScreen = ({ history, match }) => {
   ])
 
   const deleteHandler = async (id) => {
-    if (window.confirm('هل تريد حذف المنتج؟')) {
+    if (window.confirm('Are you sure you want to delete this product?')) {
       const storageRef = app
         .storage()
         .ref()

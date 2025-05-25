@@ -32,7 +32,7 @@ const OrderListScreen = ({ history }) => {
   }, [dispatch, history, userInfo, orderSuccess])
 
   const deleteHandler = (id) => {
-    if (window.confirm('هل تريد حذف الطلب؟')) {
+    if (window.confirm('Are you sure you want to delete this order?')) {
       dispatch(deleteOrder(id))
     }
   }
